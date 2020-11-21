@@ -6,7 +6,7 @@ const facts = [
     "Passed KMUTT computer engineering admission",
     "Free time activities: Gaming🎮 Reading📖 Baking🍪 Drawing✏",
     "Favorite subjects are computer, physics, English",
-    "Have been to England and Romania for exchange programmes",
+    "Been to England and Romania for exchange programmes",
     "is the KMS student president 2020",
     "Has experience coding Line bot and Discord bot📱",
     "Started writing novels in English since year 6",
