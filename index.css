@@ -1,0 +1,263 @@
+:root {
+  --font-stack: "Kanit", sans-serif;
+  --main-txt-col: #55585d;
+}
+
+.web {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.navbar {
+  z-index:1000;
+}
+
+.body,
+.navbar,
+h2 {
+  font-family: var(--font-stack);
+}
+
+ul li a {
+  color: var(--main-txt-col);
+  margin-right: 2vw;
+}
+
+ul li a:hover {
+  color: #a4a9b1;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  padding-left: 20%;
+  flex-direction: column;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10vh;
+  padding-left: 50vw;
+}
+
+.img-me {
+  height: 70vh;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content h2 {
+  color: #ffbf00;
+}
+
+img {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
+.btn-warning {
+  color: rgb(94, 94, 94);
+}
+
+.animated-icon2 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon2 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon2:focus {
+  border: none;
+}
+
+.animated-icon2 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon2 span {
+  background: #55585d;
+}
+
+.navbar-collapse #ham .nav-item {
+  border-bottom: 1px #ffbf00 solid;
+}
+
+#smol-rand {
+  font-size:calc(10px + 1vw)
+}
+
+.icons {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.25);
+  z-index:5000;
+}
+
+.modal-content {
+  background: white;
+  border:none;
+  border-radius: 20px;
+  padding: 2vh 4vh;
+  
+}
+
+#fact {
+  font-family: var(--font-stack);
+}
+
+@media (orientation: landscape) {
+  .content h2 {
+    font-size: calc(25px + 2vw);
+    margin-top: -8vw;
+  }
+
+  .btn-warning {
+    font-size: calc(12px + 0.6vw);
+    margin-left: 1vw;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .modal-content {
+    width:80vw;
+  }
+
+  #fact {
+    font-size: calc(12px + 1vw);
+  }
+}
+
+@media (orientation: portrait) {
+  .content {
+    margin-top:-8vh;
+    margin-left:-5vh;
+  }
+
+  .content h2 {
+    font-size: calc(15px + 2vh);
+
+  }
+
+  .btn-warning {
+    font-size: calc(12px + 0.6vh);
+    margin-bottom:1.2vh;
+  }
+
+  .img-me {
+    margin-top:-3vh;
+    margin-left:-15vw;
+  }
+
+  .modal-content {
+    width:80vw;
+  }
+
+  #fact {
+    font-size: calc(12px + 1vw);
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .modal-content {
+    height: fit-content;
+  }
+} 
+
+@media only screen and (min-width: 981px) {
+  .modal-content {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 15vh;
+  }
+} 

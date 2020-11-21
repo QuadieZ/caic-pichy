@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./assets/icon.svg" />
+    <title>Pichyapa.Kh</title>
+  </head>
+
+  <body>
+    <script src="./random.js"></script>
+    <div class="web">
+      <nav class="navbar" id="nav">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/icon.svg" width="30" height="30" alt=""
+        /></a>
+        <ul
+          class="nav navbar-nav navbar-right"
+          style="display: flex; flex-direction: row"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.instagram.com/phpich.10/"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://twitter.com/phphichy"
+              target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/pichyapa-khanapattanawong/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <button class="btn btn-sm btn-outline-secondary" onclick="randomFacts()">Random Facts</button>
+        </ul>
+      </nav>
+
+      <nav class="navbar" id="hamburger">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/icon.svg" width="30" height="30" alt=""
+        /></a>
+        <div class="icons">
+        <button class="btn btn-sm btn-outline-secondary" id="smol-rand" onclick="randomFacts()">Random Facts</button>
+        <button
+          class="navbar-toggler second-button"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent23"
+          aria-controls="navbarSupportedContent23"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="animated-icon2">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </button>
+        </div>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto" id="ham">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/phpich.10/"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://twitter.com/phphichy"
+                target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/pichyapa-khanapattanawong/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+        
+      </nav>
+      <!--/.Navbar-->
+
+      <div class="content">
+        <h2>Pichyapa <br />Khanapattanawong</h2>
+        <div class="buttons">
+          <button type="button" class="btn btn-warning" onclick="window.open('https://drive.google.com/file/d/10xeD9bM-YF7Eg4wKEURalTI0ZFOV80w4/view?usp=sharing')">Portfolio</button>
+          <button type="button" class="btn btn-warning" onclick="window.open('https://drive.google.com/drive/u/1/folders/1QXqD2HUpsVhSOBOxgWPq_o2260lJchw-', '_blank')">Design</button>
+          <button type="button" class="btn btn-warning" onclick="window.open('https://github.com/QuadieZ', '_blank')">GitHub</button>
+        </div>
+      </div>
+
+      <div class="img">
+        <img
+          src="./assets/1557603868278.jpg"
+          alt="pichyapa-khanapattanawong"
+          class="img-me"
+        />
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <p id="fact"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
